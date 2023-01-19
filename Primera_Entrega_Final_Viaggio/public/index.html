@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Entrega Proyecto Final</title>
+</head>
+
+<body>
+    <h1>Un titulo copado!!</h1>
+    <h4><a href="/api/products" method="get">Ver todos los productos</a></h4>
+
+    <h3>Crear un nuevo producto</h3>
+    <form action="/api/products" method="post" style="display: flex; flex-direction: column;">
+        Title: <input type="text" name="title" id="title" style="width: 25%;" />
+        Description: <input type="text" name="description" id="description" style="width: 25%;" />
+        Price: <input type="number" name="price" id="price" style="width: 25%;" />
+        Stock: <input type="number" name="stock" id="stock" style="width: 25%;" />
+        Category: <input type="text" name="category" id="category" style="width: 25%;" />
+        <input type="submit" value="CREAR" style="width: 25%; margin-top: 5px;">
+    </form>
+</body>
+
+</html>
