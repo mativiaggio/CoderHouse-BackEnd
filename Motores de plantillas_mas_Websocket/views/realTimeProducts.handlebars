@@ -1,0 +1,27 @@
+{{#if products.length}}
+{{#each products}}
+<div>
+    <h3 style="text-decoration: underline;">{{title}}</h3>
+    <p style="font-style: italic;">Descripcion: {{description}}</p>
+    <p style="font-style: italic;">Precio: ${{price}}</p>
+    <p style="font-style: italic;">Stock: {{stock}}</p>
+    <p style="font-style: italic;">Categoria: {{category}}</p>
+    <button style="cursor: pointer;"><a href="/api/products/{{id}}" style="text-decoration: none; color:black;">Ver producto</a></button><br>
+</div>
+{{/each}}
+{{else}}
+<h2>NO PRODUCTS</h2>
+{{/if}}
+<div style="position: fixed; top:0; right:50px;">
+    <div>
+        <h3>Crear un nuevo producto</h3>
+        <form action="/api/products" method="post" style="display: flex; flex-direction: column;">
+            Title: <input type="text" name="title" id="title" style="width: 100%;" />
+            Description: <input type="text" name="description" id="description" style="width: 100%;" />
+            Price: <input type="number" name="price" id="price" style="width: 100%;" />
+            Stock: <input type="number" name="stock" id="stock" style="width: 100%;" />
+            Category: <input type="text" name="category" id="category" style="width: 100%;" />
+            <input type="submit" value="CREAR" style="width: 100%; margin-top: 5px;">
+        </form>
+    </div>
+</div>

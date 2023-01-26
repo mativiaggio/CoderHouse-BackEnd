@@ -1,0 +1,14 @@
+<h1>SOCKET</h1>
+<h4><a href="/api/products" method="get">Ver todos los productos</a></h4>
+
+<h3>Crear un nuevo producto</h3>
+<form action="/api/products" method="post" style="display: flex; flex-direction: column;" id="formulario">
+    Title: <input type="text" name="title" id="title" style="width: 25%;" />
+    Description: <input type="text" name="description" id="description" style="width: 25%;" />
+    Price: <input type="number" name="price" id="price" style="width: 25%;" />
+    Stock: <input type="number" name="stock" id="stock" style="width: 25%;" />
+    Category: <input type="text" name="category" id="category" style="width: 25%;" />
+    <input type="submit" value="CREAR" style="width: 25%; margin-top: 5px;" id="formButton">
+</form>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/index.js" type="module"></script>

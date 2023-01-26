@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "products": [
+    {
+      "id": 1,
+      "title": "Iphone XS",
+      "description": "Apple mobile phone",
+      "price": 1200,
+      "stock": 200,
+      "thumbnail": "./img/iphoneXS.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Samsung1",
+      "description": "celular1",
+      "price": "980",
+      "stock": "70",
+      "category": "celulares"
+    },
+    {
+      "id": 1,
+      "title": "Iphone XS",
+      "description": "Apple mobile phone",
+      "price": 1200,
+      "stock": 200,
+      "thumbnail": "./img/iphoneXS.jpg"
+    }
+  ]
+}
